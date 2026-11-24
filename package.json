@@ -1,0 +1,22 @@
+{
+  "name": "salon-queue",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Salon queue management platform.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "npm start --prefix server",
+    "build": "npm run build --prefix client",
+    "render-build": "npm install --prefix server",
+    "render-start": "npm start --prefix server",
+    "server:install": "npm install --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "server:start": "npm start --prefix server",
+    "client:install": "npm install --prefix client",
+    "client:dev": "npm run dev --prefix client",
+    "client:build": "npm run build --prefix client",
+    "test": "npm test --prefix server"
+  }
+}

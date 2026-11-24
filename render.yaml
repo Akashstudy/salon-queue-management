@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: salon-queue-backend
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: CORS_ORIGIN
+        value: "*"
+      - key: STAFF_PIN
+        value: "2468"
+      - key: IGNORE_HOURS
+        value: "1"
+      - key: NOSHOW_MINUTES
+        value: "10"
